@@ -227,7 +227,8 @@ DATA <- list(
 #beta = INDIVIDUAL - random
 #gamma = AGE - fixed
 
-setwd('JAGS')
+setwd('..')
+
 
 {
   sink("captive.jags")
@@ -297,8 +298,9 @@ Inits <- function() {list(alpha = rep(rnorm(1),
 #----------------------#
 #Parameters to track
 
-Pars <- c("alpha", "beta", "gamma")
-
+Pars <- c("alpha", 
+          "beta", 
+          "gamma")
 
 
 # Inputs for MCMC ---------------------------------------------------------
@@ -314,7 +316,7 @@ n_chain <- 3  # number of chains
 #Run model
 
 jm = jags.model(data = DATA, 
-                file = "JAGS/captive.jags", 
+                file = "captive.jags", 
                 inits = Inits, 
                 n.chains = 3, 
                 n.adapt = n_adapt)
