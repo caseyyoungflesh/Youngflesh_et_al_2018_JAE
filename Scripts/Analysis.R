@@ -309,9 +309,6 @@ n_draw <- 10000  # number of final draws to make
 n_thin <- 2    # thinning rate
 n_chain <- 3  # number of chains
 
-Rhat_max <- 1.1 # max allowable Rhat (close to 1 = convergence)
-n_max <- 1e7 # max allowable iterations
-
 
 #----------------------#
 #Run model
@@ -328,26 +325,6 @@ out = coda.samples(jm,
                    n.iter = n_draw, 
                    variable.names = Pars, 
                    thin = n_thin)
-
-
-#extra draws to ensure convergence
-n_total <- n_burn + n_draw
-n_extra <- 0
-while(max(MCMCsummary(out)[,5]) > Rhat_max &
-      n_total < n_max)
-{
-  
-  out <- update(out,
-                n.iter = n_draw,
-                n.chains = n_chain,
-                n.thin = n_thin)
-  
-  n_extra <- n_extra + n_draw
-  n_total <- n_total + n_draw
-}
-
-n_final <- n_draw/n_thin
-
 
 
 ###Year effect (alpha)
