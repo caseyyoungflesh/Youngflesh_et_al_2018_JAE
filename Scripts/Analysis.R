@@ -5,7 +5,7 @@
 #Author: Casey Youngflesh
 ##############################
 
-#Rethinking  normal: Synchrony-enhanced stochasticity in the breeding phenology of a colonial seabird#
+#Rethinking ‘normal’: The role of stochasticity in the breeding phenology of a synchronously breeding seabird
 
 #Casey Youngflesh, Stephanie Jenouvrier, Jefferson T. Hinke, Lauren DuBois, Judy St. Leger, Wayne Z. Trivelpiece, Susan G. Trivelpiece, Heather J. Lynch
 
@@ -86,6 +86,38 @@ var(wild_md_sd$MEDIAN)
 
 #Wild standard error of variance
 se_var(wild_md_sd$MEDIAN)
+
+
+
+
+#Inter-annual variation in CID from literature
+
+#data from Both et al. 2009 and Valtonen et al. 2017
+
+setwd('Data')
+
+lit_data <- read.csv('Lit_data.csv', header = TRUE)
+
+#detrend because we are interested in the interannual variance - trends would conflate this estimate
+fit_BT_B_2009 <- lm(lit_data$BT_B_2009 ~ lit_data$YEAR)
+res_BT_B_2009 <- residuals(fit_BT_B_2009)
+v_BT_B_2009 <- var(res_BT_B_2009)
+
+fit_GT_B_2009 <- lm(lit_data$GT_B_2009 ~ lit_data$YEAR)
+res_GT_B_2009 <- residuals(fit_GT_B_2009)
+v_GT_B_2009 <- var(res_GT_B_2009)
+
+fit_PF_B_2009 <- lm(lit_data$PF_B_2009 ~ lit_data$YEAR)
+res_PF_B_2009 <- residuals(fit_PF_B_2009)
+v_PF_B_2009 <- var(res_PF_B_2009)
+
+#no need to detrend as there is no significant change over time
+v_CR_V_2017 <- var(lit_data$CR_V_2017, na.rm = TRUE)
+v_GT_V_2017 <- var(lit_data$GT_V_2017, na.rm = TRUE)
+v_PF_V_2017 <- var(lit_data$PF_V_2017, na.rm = TRUE)
+
+
+
 
 
 
@@ -460,4 +492,57 @@ xlim = c(-2.5, 3),
 breaks = 25)
 lines(density(wild_rd), col='blue', lwd=5)
 lines(density(wild_sk$s_CID, na.rm=TRUE), col='red', lwd=5)
+
+
+
+
+
+
+
+
+
+###Skew estimates from literature
+
+
+setwd('Data')
+
+lit_skew <- read.csv('Lit_skew.csv', header = TRUE)
+
+mn_skew_lit  <- mean(lit_skew$Skew)
+
+hist(lit_skew$Skew, 
+     main = 'Red = Captive; Blue = Wild',
+     xlab = 'Estimated Skew')
+abline(v = skew_captive, col = 'red', lwd = 5)
+abline(v = skew_wild, col = 'blue', lwd = 5)
+
+
+per_captive <- length(which(lit_skew$Skew > skew_captive))/NROW(lit_skew)
+per_wild <- length(which(lit_skew$Skew > skew_wild))/NROW(lit_skew)
+
+
+
+
+
+
+###Simulation of right skew breeding distribution
+
+
+#simulate a normal distirbution (breeding in the absence of conspecifics)
+set.seed(1)
+time <- round(rnorm(1000, 50, 10))
+time <- sort(time)
+#no significant skew
+agostino.test(time)
+
+#simulate 'contagion effect' of breeding
+for (i in min(time):max(time))
+{
+  time[time == i] <- time[time == i] - sum(as.numeric((time > (i - 3)) & (time < i)))/4
+}
+
+hist(time, prob = TRUE)
+lines(density(time), col = 'blue', lwd = 5)
+
+agostino.test(time)
 
