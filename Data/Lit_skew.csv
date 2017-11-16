@@ -1,0 +1,168 @@
+Species,Taxon,Publication,Metric,Skew
+Mertensia fusiformis,Plant,Thomson 1980,Flowers,0.433
+Mertensia ciliata,Plant,Thomson 1980,Flowers,0.488
+Campanula rotundifolia,Plant,Thomson 1980,Flowers,0.563
+Campanula rotundifolia,Plant,Thomson 1980,Flowers,0.506
+Achillea millefolium,Plant,Thomson 1980,Composite heads,0.234
+Achillea millefolium,Plant,Thomson 1980,Composite heads,0.316
+Achillea millefolium,Plant,Thomson 1980,Composite heads,0.542
+Achillea millefolium,Plant,Thomson 1980,Composite heads,0.55
+Agoseris clauca,Plant,Thomson 1980,Composite heads,0.425
+Agoseris clauca,Plant,Thomson 1980,Composite heads,0.483
+Arnica mollis,Plant,Thomson 1980,Composite heads,0.425
+Arnica mollis,Plant,Thomson 1980,Composite heads,0.483
+Chrysopsis villosa,Plant,Thomson 1980,Composite heads,0.207
+Chrysopsis villosa,Plant,Thomson 1980,Composite heads,0.287
+Erigeron coulteri,Plant,Thomson 1980,Composite heads,1.147
+Erigeron coulteri,Plant,Thomson 1980,Composite heads,0.713
+Erigeron elatior,Plant,Thomson 1980,Composite heads,0.572
+Erigeron elatior,Plant,Thomson 1980,Composite heads,0.378
+Erigeron peregrinus,Plant,Thomson 1980,Composite heads,1.283
+Erigeron peregrinus,Plant,Thomson 1980,Composite heads,1.12
+Erigeron speciousus,Plant,Thomson 1980,Composite heads,0.44
+Erigeron speciousus,Plant,Thomson 1980,Composite heads,0.638
+Erigeron speciousus,Plant,Thomson 1980,Composite heads,0.651
+Helenium hoopesii,Plant,Thomson 1980,Composite heads,0.703
+Helenium hoopesii,Plant,Thomson 1980,Composite heads,0.578
+Helianthella quinquenervis,Plant,Thomson 1980,Composite heads,0.331
+Helianthella quinquenervis,Plant,Thomson 1980,Composite heads,0.397
+Senecio crassulus,Plant,Thomson 1980,Composite heads,0.407
+Solidago multiradiata,Plant,Thomson 1980,Composite heads,0.481
+Taraxacum officinale,Plant,Thomson 1980,Composite heads,0.893
+Viguiera multiflora,Plant,Thomson 1980,Composite heads,0.022
+Viguiera multiflora,Plant,Thomson 1980,Composite heads,0.141
+Arabis drummondii,Plant,Thomson 1980,Flowers,2.795
+Arabis drummondii,Plant,Thomson 1980,Flowers,1.71
+Draba nemorosa,Plant,Thomson 1980,Flowers,0.411
+Draba nemorosa,Plant,Thomson 1980,Flowers,0.205
+Draba spectabilis,Plant,Thomson 1980,Flowers,0.355
+Erysimum asperum,Plant,Thomson 1980,Flowers,1.089
+Thlaspi alpestre,Plant,Thomson 1980,Flowers,0.845
+Geranium richardsonii,Plant,Thomson 1980,Flowers,0.243
+Frasera speciosa,Plant,Thomson 1980,Flowers,0.417
+Gentiana calycosa,Plant,Thomson 1980,Flowers,-0.176
+Gentiana calycosa,Plant,Thomson 1980,Flowers,-0.53
+Gentiana amarella,Plant,Thomson 1980,Flowers,0.811
+Gentiana amarella,Plant,Thomson 1980,Flowers,0.562
+Astragalus sp.,Plant,Thomson 1980,Flowers,0.332
+Lathyrus leucanthus,Plant,Thomson 1980,Flowers,0.035
+Lupinus amplus,Plant,Thomson 1980,Flowers,0.425
+Lupinus amplus,Plant,Thomson 1980,Flowers,0.346
+Vicia americana,Plant,Thomson 1980,Flowers,0.87
+Erythronium grandiflorum,Plant,Thomson 1980,Flowers,1.154
+Linum lewisii,Plant,Thomson 1980,Flowers,0.432
+Linum lewisii,Plant,Thomson 1980,Flowers,0.914
+Ipomopsis aggregata,Plant,Thomson 1980,Flowers,0.404
+Androsace septentrionalis,Plant,Thomson 1980,Flowers,0.748
+Androsace septentrionalis,Plant,Thomson 1980,Flowers,0.692
+Androsace septentrionalis,Plant,Thomson 1980,Flowers,0.728
+Claytonia lanceolata,Plant,Thomson 1980,Flowers,0.864
+Aquilegia caerulea,Plant,Thomson 1980,Flowers,0.094
+Aquilegia caerulea,Plant,Thomson 1980,Flowers,0.135
+Caltha leptosepala,Plant,Thomson 1980,Flowers,0.749
+Caltha leptosepala,Plant,Thomson 1980,Flowers,0.706
+Delphinium barbeyi,Plant,Thomson 1980,Flowers,0.198
+Delphinium barbeyi,Plant,Thomson 1980,Flowers,0.396
+Delphinium nelsonii,Plant,Thomson 1980,Flowers,-0.152
+Ranunculus alismaefolius,Plant,Thomson 1980,Flowers,0.317
+Ranunculus cardiophyllus,Plant,Thomson 1980,Flowers,1.272
+Ranunculus cardiophyllus,Plant,Thomson 1980,Flowers,0.82
+Ranunculus cardiophyllus,Plant,Thomson 1980,Flowers,1.068
+Fragaria ovalis,Plant,Thomson 1980,Flowers,0.839
+Fragaria ovalis,Plant,Thomson 1980,Flowers,0.95
+Potentilla fruticosa,Plant,Thomson 1980,Flowers,0.394
+Potentilla gracilis,Plant,Thomson 1980,Flowers,0.12
+Potentilla gracilis,Plant,Thomson 1980,Flowers,0.68
+Sibbaldia procumbens,Plant,Thomson 1980,Flowers,0.435
+Galium boreale,Plant,Thomson 1980,Other inflorescences,0.286
+Saxifraga rhomboidea,Plant,Thomson 1980,Other inflorescences,0.262
+Castilleja miniata,Plant,Thomson 1980,Other inflorescences,-0.35
+Castilleja miniata,Plant,Thomson 1980,Other inflorescences,-0.378
+Castilleja rhexifolia,Plant,Thomson 1980,Other inflorescences,-0.099
+Castilleja sulphurea,Plant,Thomson 1980,Other inflorescences,0.317
+Castilleja sulphurea,Plant,Thomson 1980,Other inflorescences,0.256
+Penstemon whippleanus,Plant,Thomson 1980,Flowers,0.222
+Ligusticum porteri,Plant,Thomson 1980,Other inflorescences,0.472
+Pseudocymopterus montanus,Plant,Thomson 1980,Other inflorescences,0.097
+Valeriana capitata,Plant,Thomson 1980,Other inflorescences,0.361
+Valeriana edulis,Plant,Thomson 1980,Open flowers,0.265
+Viola adunca,Plant,Thomson 1980,Flowers,0.322
+Viola nuttallii,Plant,Thomson 1980,Flowers,-0.556
+Phylloscopus trochilus,Bird,Sparks et al. 2005,Arrival,0.58
+Phylloscopus trochilus,Bird,Sparks et al. 2005,Arrival,0.38
+Phylloscopus trochilus,Bird,Sparks et al. 2005,Arrival,0.13
+Phylloscopus trochilus,Bird,Sparks et al. 2005,Arrival,0.16
+Phylloscopus trochilus,Bird,Sparks et al. 2005,Arrival,0.33
+Phylloscopus trochilus,Bird,Sparks et al. 2005,Arrival,0.32
+Phylloscopus collybita,Bird,Sparks et al. 2005,Arrival,0.59
+Phylloscopus collybita,Bird,Sparks et al. 2005,Arrival,0.26
+Phylloscopus collybita,Bird,Sparks et al. 2005,Arrival,0.7
+Phylloscopus collybita,Bird,Sparks et al. 2005,Arrival,0.26
+Phylloscopus collybita,Bird,Sparks et al. 2005,Arrival,0.86
+Ficedula hypoleuca,Bird,Sparks et al. 2005,Arrival,0.33
+Ficedula hypoleuca,Bird,Sparks et al. 2005,Arrival,0.16
+Ficedula hypoleuca,Bird,Sparks et al. 2005,Arrival,0.05
+Arthya collaris,Bird,Wilson 2013,Arrival,0.24
+Ardea herodias,Bird,Wilson 2013,Arrival,0.62
+Cathartes aura,Bird,Wilson 2013,Arrival,0.509
+Pandion haliaetus,Bird,Wilson 2013,Arrival,0.699
+Buteo platypterus,Bird,Wilson 2013,Arrival,-0.39
+Falco sparverius,Bird,Wilson 2013,Arrival,0.449
+Charadrius vociferus,Bird,Wilson 2013,Arrival,0.873
+Actitis macularius,Bird,Wilson 2013,Arrival,0.161
+Gallinago delicata,Bird,Wilson 2013,Arrival,0.476
+Scoloplax minor,Bird,Wilson 2013,Arrival,1.231
+Chaetura pelagica,Bird,Wilson 2013,Arrival,0.523
+Archilochus colubris,Bird,Wilson 2013,Arrival,0.108
+Megaceryle torquata,Bird,Wilson 2013,Arrival,-0.636
+Sphyrapicus varius,Bird,Wilson 2013,Arrival,1.479
+Colaptes auratus,Bird,Wilson 2013,Arrival,-0.783
+Colaptes virens,Bird,Wilson 2013,Arrival,-0.729
+Empidonax minimus,Bird,Wilson 2013,Arrival,0.283
+Sayornis phoebe,Bird,Wilson 2013,Arrival,1.907
+Myiarchus crinitus,Bird,Wilson 2013,Arrival,0.582
+Tyrannus tyrannus,Bird,Wilson 2013,Arrival,-0.518
+Vireo solitarius,Bird,Wilson 2013,Arrival,0.178
+Vireo gilvus,Bird,Wilson 2013,Arrival,0.533
+Vireo olivaceus,Bird,Wilson 2013,Arrival,0.335
+Tachycineta bicolor,Bird,Wilson 2013,Arrival,0.945
+Hirundo rustica,Bird,Wilson 2013,Arrival,0.173
+Troglodytes aedon,Bird,Wilson 2013,Arrival,0.277
+Troglodytes troglodytes,Bird,Wilson 2013,Arrival,0.627
+Regulus calendula,Bird,Wilson 2013,Arrival,0.454
+Sialia sialis,Bird,Wilson 2013,Arrival,0.225
+Catharus fuscescens,Bird,Wilson 2013,Arrival,-0.181
+Catharus guttatus,Bird,Wilson 2013,Arrival,0.301
+Hylocichla mustelina,Bird,Wilson 2013,Arrival,0.175
+Dumetella carolinensis,Bird,Wilson 2013,Arrival,-0.637
+Toxostoma rufum,Bird,Wilson 2013,Arrival,0.217
+Seiurus aurocapilla,Bird,Wilson 2013,Arrival,0.216
+Parkesia novaeboracensis,Bird,Wilson 2013,Arrival,0.367
+Mniotilta varia,Bird,Wilson 2013,Arrival,0.653
+Oreothlypis ruficapilla,Bird,Wilson 2013,Arrival,0.804
+Geothlypis trichas,Bird,Wilson 2013,Arrival,0.928
+Setophaga ruticilla,Bird,Wilson 2013,Arrival,0.448
+Setophaga americana,Bird,Wilson 2013,Arrival,0.098
+Setophaga magnolia,Bird,Wilson 2013,Arrival,0.262
+Setophaga fusca,Bird,Wilson 2013,Arrival,0.628
+Setophaga petechia,Bird,Wilson 2013,Arrival,0.47
+Setophaga pensylvanica,Bird,Wilson 2013,Arrival,0.629
+Setophaga caerulescens,Bird,Wilson 2013,Arrival,0.652
+Setophaga palmarum,Bird,Wilson 2013,Arrival,0.579
+Setophaga pinus,Bird,Wilson 2013,Arrival,0.651
+Setophaga coronata,Bird,Wilson 2013,Arrival,-0.835
+Setophaga virens,Bird,Wilson 2013,Arrival,0.667
+Cardellina canadensis,Bird,Wilson 2013,Arrival,0.32
+Spizella passerina,Bird,Wilson 2013,Arrival,-0.254
+Passerculus sandwichensis,Bird,Wilson 2013,Arrival,0.014
+Melospiza melodia,Bird,Wilson 2013,Arrival,-0.792
+Melospiza georgiana,Bird,Wilson 2013,Arrival,0.094
+Zonotrichia albicollis,Bird,Wilson 2013,Arrival,-1.986
+Piranga olivacea,Bird,Wilson 2013,Arrival,0.651
+Pheucticus ludovicianus,Bird,Wilson 2013,Arrival,0.764
+Passerina cyanea,Bird,Wilson 2013,Arrival,0.157
+Dolichonyx oryzivorus,Bird,Wilson 2013,Arrival,0.605
+Aegelaius phoeniceus,Bird,Wilson 2013,Arrival,1.483
+Sturnella magna,Bird,Wilson 2013,Arrival,1.992
+Quisculus quiscala,Bird,Wilson 2013,Arrival,1.426
+Icterus galbula,Bird,Wilson 2013,Arrival,0.01
