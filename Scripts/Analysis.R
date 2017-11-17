@@ -299,8 +299,6 @@ setwd('..')
       #hyperparameters
       tau.year ~ dgamma(0.01, 0.01)
       tau.ind ~ dgamma(0.01, 0.01)
-      rate.tau ~ dgamma(0.01, 0.01)
-      shape.tau ~ dgamma(0.01, 0.01)
       
       }",fill = TRUE)
 
