@@ -111,13 +111,15 @@ fit_PF_B_2009 <- lm(lit_data$PF_B_2009 ~ lit_data$YEAR)
 res_PF_B_2009 <- residuals(fit_PF_B_2009)
 v_PF_B_2009 <- var(res_PF_B_2009)
 
-#no need to detrend as there is no significant change over time
+fit_CT_B_2009 <- lm(lit_data$CT_B_2009 ~ lit_data$YEAR)
+res_CT_B_2009 <- residuals(fit_CT_B_2009)
+v_CT_B_2009 <- var(res_CT_B_2009)
+
+#no need to detrend - no significant change
+v_SH_B_2009 <- var(lit_data$SH_B_2009, na.rm = TRUE)
 v_CR_V_2017 <- var(lit_data$CR_V_2017, na.rm = TRUE)
 v_GT_V_2017 <- var(lit_data$GT_V_2017, na.rm = TRUE)
 v_PF_V_2017 <- var(lit_data$PF_V_2017, na.rm = TRUE)
-
-
-
 
 
 
@@ -266,8 +268,8 @@ setwd('..')
   sink("captive.jags")
   
   cat("
-      model {
-      
+   model {
+    
       for(t in 1:N)
       {
       for(i in 1:M)
@@ -294,11 +296,14 @@ setwd('..')
       #mu, gamma, and tau
       mu ~ dnorm(0, 0.001)
       gamma ~ dnorm(0, 0.001)
-      tau ~ dgamma(0.01, 0.01)    
+      tau ~ dgamma(0.01, 0.01)
+      var.model <- 1/tau #convert from precision to variance
       
       #hyperparameters
       tau.year ~ dgamma(0.01, 0.01)
+      var.year <- 1/tau.year
       tau.ind ~ dgamma(0.01, 0.01)
+      var.ind <- 1/tau.ind
       
       }",fill = TRUE)
 
@@ -320,17 +325,13 @@ Inits <- function() {list(alpha = rep(rnorm(1),
                           mu = rnorm(1), 
                           gamma = rnorm(1), 
                           tau.year = rgamma(1, 1), 
-                          tau.ind = rgamma(1, 1),
-                          rate.tau = rgamma(1, 1), 
-                          shape.tau = rgamma(1, 1))}
+                          tau.ind = rgamma(1, 1))}
 
 
 #----------------------#
 #Parameters to track
 
-Pars <- c("alpha", 
-          "beta", 
-          "gamma")
+Pars <- c('alpha', 'beta', 'gamma', 'var.year', 'var.ind', 'var.model')
 
 
 # Inputs for MCMC ---------------------------------------------------------
@@ -404,6 +405,12 @@ MCMCplot(out,
 
 MCMCsummary(out, 
             params = 'gamma')
+
+
+###Variance estimates (inverse precision)
+
+MCMCsummary(out, 
+            params = c('var.year', 'var.ind', 'var.model'))
 
 
 #Skewness test and plots
@@ -525,6 +532,8 @@ per_wild <- length(which(lit_skew$Skew > skew_wild))/NROW(lit_skew)
 
 ###Simulation of right skew breeding distribution
 
+
+#Simple model to show that a right skew distribution can be produced when breeding is accelerated proportional to the number of pairs that have recently initiated breeding.
 
 #simulate a normal distirbution (breeding in the absence of conspecifics)
 set.seed(1)
