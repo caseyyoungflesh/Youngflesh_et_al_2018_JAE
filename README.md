@@ -2,9 +2,10 @@
 
 Code and data for Youngflesh et al. 2017 *Journal of Animal Ecology*
 
-[![DOI](https://zenodo.org/badge/)](https://zenodo.org/badge/latestdoi/)
+Associated publication:
 
-Youngflesh, C, S Jenouvrier, JT Hinke, L DuBois, J St. Leger, WZ Trivelpiece, SG Trivelpiece, HJ Lynch. 2017. Rethinking normal: synchrony-enhanced stochasticity in the breeding phenology of a colonial seabird. In Review at Journal of Animal Ecology
+Youngflesh, C., Jenouvrier, S., Hinke, J.T., DuBois, L., St. Leger, J., Trivelpiece, W.Z., Trivelpiece, S.G. & Lynch, H.J. (2017). [Rethinking ‘normal’: The role of stochasticity in the phenology of a synchronously breeding seabird.](http://besjournals.onlinelibrary.wiley.com/hub/journal/10.1111/(ISSN)1365-2656/) *Journal of Animal Ecology*
+
 
 **NOTE:**
 JAGS needs to be installed before running code. Info on installing JAGS can be found [here](http://mcmc-jags.sourceforge.net/).
