@@ -94,8 +94,6 @@ se_var(wild_md_sd$MEDIAN)
 
 #data from Both et al. 2009 and Valtonen et al. 2017
 
-setwd('Data')
-
 lit_data <- read.csv('Lit_data.csv', header = TRUE)
 
 #detrend because we are interested in the interannual variance - trends would conflate this estimate
@@ -239,8 +237,6 @@ range(len_fun(captive_data)[,2])
 #$$\alpha_{i} \sim N(0, \tau_{year})$$
 #$$\beta_{j} \sim N(0, \tau_{individual})$$
 #$$\epsilon_{ij} \sim N(0, \tau_{model})$$
-
-setwd('Data')
 
 AGE_mat <- read.csv('AGE_mat.csv', header= TRUE)
 CID_mat <- read.csv('CID_mat.csv', header= TRUE)
@@ -441,6 +437,7 @@ cap_sk <- sc_agg_fun(captive_data)
 
 #Skew determined using D'Agostino test
 agostino.test(cap_sk$s_CID)
+skew_captive <- agostino.test(cap_sk$s_CID)$statistic[1]
 
 
 #Standard error skew
@@ -457,6 +454,8 @@ ses(length_captive)
 
 ###Wild
 wild_sk <- sc_agg_fun(wild_data)
+skew_wild <- agostino.test(wild_sk$s_CID)$statistic[1]
+
 
 
 #Skew
